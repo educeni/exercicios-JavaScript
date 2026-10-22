@@ -6,18 +6,20 @@
     
     $resultado = ($av1 + $av2) / 2;
 
-    if(($resultado >= 7)&& ($resultado <= 10)){
-        $msg = "Aprovado";
-    }
-    else if($resultado >= 5) {
-        $msg = "Recuperacao";
-    }
-    else if (($resultado < 5) && ($resultado>=0)) {
-        $msg = "Reprovado";
-    }
-    else {
+    if(($av1>10)||($av2>10)||($av1>10)||($av2<0)){
         $msg = "Forneca notas validas";
+    }else{
+        if(($resultado >= 7) && ($resultado <= 10)){
+            $msg = "Aprovado";
+        }
+        else if($resultado >= 5) {
+            $msg = "Recuperacao";
+        }
+        else {
+            $msg = "Reprovado";
+        }
+            echo $resultado . "\n";
     }
-    echo $resultado . "\n";
+
     echo $msg;
 ?>
