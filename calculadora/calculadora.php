@@ -20,24 +20,6 @@
         echo "Error: Invalid operator.";
         exit();
     }
-?>
 
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3DAW</title>
-</head>
-<body>
-    <?php echo "<h1>Resultado: $result</h1>";?>
-    <hr>
-    <strong>Continuar o calculo? </strong>
-    <form action="calcular.php" method="GET">
-        Resultado atual: <input type="text" value="<?php echo $result; ?>" name="a"><br>
-        Forneca o operador : <input type="text" value="0" name="op"><br>
-        Forneca o novo valor: <input type="text" value="0" name="b"><br>
-            <input type="submit" value="Calcular"><br>
-    </form>
-</body>
-</html>
+    echo $result;
+?>
